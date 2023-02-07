@@ -1,0 +1,47 @@
+:root {
+  --brimary: white;
+  --secondary: white;
+  --bg: #9ad8d3;
+  --btn: white;
+
+  --dark: white;
+  --light: white;
+  --blue: rgb(14, 19, 102);
+  --light-blue: rgb(32, 148, 225);
+
+  --success: white;
+  --fail: rgb(190, 62, 62);
+
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Varela Round', sans-serif; */
+
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+
+}
+span {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.--link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.err {
+  text-align: center;
+  color: var(--fail);
+}

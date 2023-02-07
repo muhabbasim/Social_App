@@ -1,0 +1,31 @@
+
+@import '../../style.scss';
+
+.post-options {
+
+  @include themify($themes) {
+
+    background-color: themed('bg');
+    color: themed('textColor');
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 230px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 100;
+
+    hr {
+      border: 1px solid themed('border');
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+}

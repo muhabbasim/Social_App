@@ -1,0 +1,115 @@
+@import '../../style.scss';
+
+.share {
+
+  @include themify($themes) {
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: themed('bg');
+    color: themed('textColor');
+    gap: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    margin-bottom: 40px;
+
+    position: relative;
+
+    .write {
+      display: flex;
+      align-items: center;
+
+      .user {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+        .user-info {
+
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            
+          }
+        }
+      }
+  
+      .content {
+        flex: 5;
+
+        textarea {
+          width: 100%;
+          outline: none;
+          border: none;
+          resize: none;
+          color: themed('textColor');
+          background-color: transparent;
+          padding-top: 30px;
+        }
+      }
+
+      .file {
+        flex: 1;
+
+        .file-img {
+          width: 100%;
+          height: 70px;
+          object-fit: cover;
+          // border-radius: 50%;
+        }
+      }
+    }
+
+    .upload {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .info {
+        display: flex;
+        gap: 15px;
+  
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          cursor: pointer;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+          }
+
+          img{
+            width: 30px;
+          }
+
+          span {
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+          }
+          
+        }
+        
+      }
+
+      .share-btn {
+        padding: 7px 13px;
+        border: none;
+        border-radius: 3px;
+        color: themed('textColor');
+        background-color: var(--light-blue);
+        cursor: pointer;
+      }
+    }
+    
+
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../style.scss';
+
+
+.post {
+
+  @include themify($themes) {
+      
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: themed('bg');
+    color: themed('textColor');
+    gap: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+
+    position: relative;
+
+    .user {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .user-info {
+        display: flex;
+        gap: 10px;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
+          
+        }
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        max-height: 400px;
+      }
+    }
+
+    .info {
+      display: flex;
+      gap: 15px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+
+      }
+
+    }
+
+    .post-option{
+      position: absolute;
+      top: 70px;
+      right: 10px;
+    }
+
+  }
+}

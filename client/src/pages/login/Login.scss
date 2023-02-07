@@ -1,0 +1,83 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg);
+
+  .card {
+    min-height: 500px;
+    width: 60%;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    .left {
+      background-image: url(../../assets/images/bg.avif);
+      flex: 1;
+      padding: 50px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+
+
+      h1 {
+        font-size: 60px;
+      } 
+
+      p { 
+        font-size: 15px;
+      }
+
+      button {
+        width: fit-content;
+        padding: 10px 60px;
+        border: none;
+        color: #11514c;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      flex: 1;
+      background-color: rgb(255, 255, 255);
+      padding: 50px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      h1 {
+        font-size: 30px;
+        color: rgb(104, 104, 104);
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid rgba(159, 159, 159, 0.405);
+          padding: 10px 5px;
+          outline: none;
+
+        }
+
+        
+        .login-btn {
+          width: fit-content;
+          padding: 10px 60px;
+          border: none;
+          background-color: #305d59;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+    }
+  }
+}
